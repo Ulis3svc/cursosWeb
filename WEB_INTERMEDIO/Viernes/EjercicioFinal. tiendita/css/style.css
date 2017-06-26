@@ -1,0 +1,42 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  nav{
+    padding-right: 50px;
+  }
+  h4{
+    font-family: 'PT Sans', sans-serif;
+  }
+  main {
+    flex: 1 0 auto;
+  }
+  p{
+  	text-align: justify;
+  }
+  .parallax-container {
+      height: 400px;
+    }
+  .carousel .carousel-item{
+  	width: 400px;
+  }
+	img.got1, img.got3{
+		width: 50%;
+		
+	}
+.logo {
+    height: 65px;
+    width: 45%;
+}
+.logo-foot-apple{
+    height: 64px;
+    width: 30%;
+    padding-left: 2px;
+}
+.logo-foot-play{
+    padding-right: 10px;
+    height: 60px;
+    width: 30%;
+    
+}

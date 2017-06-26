@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock, paper, scissors</title>
+</head>
+<body>
+	<input id="miinput" type="text" value="Valor Predeterminado">
+	<button id="boton"> ¿Qué Quieres Poner?</button>
+	<div id="primerdiv">---------> Aquí está mi div</div>
+	<script>
+		document.write("<h1>Hola Mundo</h1>");
+		var usuarioElige = prompt("Rock, Paper, Scissors?");
+		var computadoraElige = Math.random();
+
+		if(computadoraElige<=0.33){
+			computadoraElige="rock";
+		}
+		else if(computadoraElige>=0.67){
+			computadoraElige="scissors";
+		}
+		else{
+			computadoraElige = "paper"
+		}
+
+		function comparar(eleccion1, eleccion2){
+			if(eleccion1==eleccion2){
+				alert("Tu: "+ eleccion1+  " Compu: "+eleccion2+"\n\n");
+				alert("Es un empate!!!");
+			}
+			else if (eleccion1==="rock") {
+				if (eleccion2==="scissors") {
+					alert("Tu: "+ eleccion1+  " Compu: "+eleccion2+"\n\n You Win!");
+				}
+				else {
+					alert("Tu: "+ eleccion1+  " Compu: "+eleccion2+"\n\n Loser!");
+				}
+			}
+			else if(eleccion1==="scissors"){
+				if(eleccion2==="rock"){
+					alert("Tu: "+ eleccion1+  " Compu: "+eleccion2+"\n\n You Win!");
+				}
+				else {
+					alert("Tu: "+ eleccion1+ " Compu: "+eleccion2+"\n\n Loser!");
+				}
+			}
+			else if(eleccion1==="paper"){
+				if(eleccion2==="rock"){
+					alert("Tu: "+ eleccion1+ " Compu: "+eleccion2+"\n\n You Win!");
+				}
+				else {
+					alert("Tu: "+ eleccion1+ " Compu: "+eleccion2+"\n\n Loser!");
+				}
+			}
+			else{
+				alert("NEL");
+			}
+		}
+
+	comparar(usuarioElige,computadoraElige);
+	</script>
+</body>
+
+
+
+</html>

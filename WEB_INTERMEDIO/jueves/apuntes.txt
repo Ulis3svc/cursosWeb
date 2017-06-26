@@ -1,0 +1,38 @@
+tipos de tipado:
+	Estático / dinámico
+	fuerte / debil
+
+DOM: Elementos de HTML
+
+
+POO:
+	Clases
+	Objetos
+		Atributos
+		Métodos
+
+4 Pilares Fundamentales de la POO;
+	Abstracción
+	Herencia
+	Encapsulamiento : Se encapsula para que no todos puedan acceder a las clases y métodos
+	Polimorfismo: Capacidad de los objetos para reaccionar diferente dependiendo el concepto
+
+
+Tarea:
+	Respuestas:
+		-Si
+		-NO
+		-Probablemente
+		-Definitivamente
+
+		función Random();
+
+
+Animacion css:
+
+
+img{
+	-webkit-animation-name: marcianito;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function:;
+}

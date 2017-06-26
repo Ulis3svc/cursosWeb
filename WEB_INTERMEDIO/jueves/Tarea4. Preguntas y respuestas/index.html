@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var x=5,
+		y = 10;
+	/*z = x+y;
+	alert("Hola Mundito" + z);
+	console.log("Hola Mundito "+ z);
+	console.log('D');
+	document.write("Hola Mundito "+ z);
+
+	 x=5,
+		y=7;
+
+	if(x=y){
+		alert(x);
+	}
+	while(x<y){
+		document.write("Hola Paco\t");
+		x++;
+	}
+	x=5;
+	do{
+		document.writeln("Hola Paco\t");
+		x++;
+	}while(x<y)
+	for (x=5; x<y; x++) {
+		document.write("Hola Paco");
+	}*/
+	//var z1 = Number(prompt("Ingresa el primer número: "));
+	//var z2 = Number(prompt("Ingresa el segundo número: "));
+	//alert("Resultado : "+String(z1+z2));
+	var resp = Math.floor((Math.random() * 4) + 1);
+	do{
+		var pregunta = prompt("Ingresa una pregunta: ","¿ ?");
+		if (pregunta=="") 
+			{
+				alert("¡Debes ingresar una pregunta!");
+			}
+	}while(pregunta=="")
+
+	switch(resp){
+		case 1: 
+			alert("Respuesta: SÍ");
+		break;
+		case 2: 
+			alert("Respuesta: NO");
+		break;
+		case 3: 
+			alert("Respuesta: PROBABLEMENTE");
+		break;
+		case 4:
+			alert("Respuesta: DEFINITIVAMENTE");
+		break;
+
+	}
+	/*switch(x){
+		case 1: 
+			document.write("Seleccionaste la opción 1");
+		break;
+		case 2: 
+			document.write("Seleccionaste la opción 2");
+		break;
+		case 3: 
+			document.write("Seleccionaste la opción 3");
+		break;
+		default: document.write("No ");
+		break;
+
+	}	*/
+
+
+	</script>
+</body>
+</html>
