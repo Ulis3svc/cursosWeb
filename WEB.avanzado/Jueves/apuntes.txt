@@ -1,0 +1,22 @@
+Paso 0: Instalar NodeJS
+
+escribir en consola
+	npm -v
+5.0.4
+--Si sale otra version: 
+	npm install -g npm
+Comprobar con :npm -v que tenemos la version 5.0.4
+NodeJS   .........angular-cli
+npm
+
+Instalar angular-cli:
+	npm install -g @angular/cli@latest
+
+Posicionarse en la carpeta donde queremos crear nuestro proyecto
+e ingresar el comando "ng new nombre_proyecto"
+
+--SE tarda--
+Pocionarse en la carpeta del proyecto e ingresar el comando:
+	npm start
+Abrir el navegador y ingrsar en la URL: localhost:4200. 
+	Aparece una página simulando un holaMundo
