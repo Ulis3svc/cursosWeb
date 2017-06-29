@@ -1,0 +1,29 @@
+html, body{
+	font-family: 'Fredoka One', cursive;
+	height: 100%;
+}
+.galeria-container{
+	background: rgba(0,0,0,0.3);
+	padding: 50px;
+}
+
+ul li{
+	cursor: pointer;
+}
+
+ul li:hover{
+	opacity: 0.8;
+}
+
+.tache{
+	color: #f1f1f1;
+	font-size: 30px;
+	position: relative;
+	top: -45px;
+	left: -45px;
+	cursor: pointer;
+}
+img.start{
+	height: auto;
+	width: 150px;
+}
