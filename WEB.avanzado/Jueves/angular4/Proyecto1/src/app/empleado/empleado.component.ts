@@ -15,6 +15,7 @@ export class EmpleadoComponent { //Clase Fruta
    public edad:number;
    public empleado:Empleado;
    public trabajadores:Array<Empleado>;
+   public bandera: false;
   // public mayorEdad: boolean = true;
    //public var1:any = "Viveros";
    //public var2:any = 2017;
@@ -23,15 +24,18 @@ export class EmpleadoComponent { //Clase Fruta
   // public hobbies:Array<string> = ['Ver Netflix', 'Escuchar Música', 'Ir al cine'];
    //public cosasFavoritas:Array<any> = ['Dormir', 69, 'FI'];
 
+   ///TWDB. Dos maneras de hacer referencia a la página
+   public colorSeleccionado: string;
+
    constructor(){
    		/*this.nombre = "Ulises";
    		this.edad = 21;*/
-   		this.empleado = new Empleado("Ulises", 18, "CEO", true);
+   		this.empleado = new Empleado("Ulises", 18, "CEO", true, "white");
    		this.trabajadores = [
-   			new Empleado("Marco", 21, "Programador", false),
-   			new Empleado("José Luis", 50, "Chaca", true),
-   			new Empleado("Daves", 21, "Cyborg", true),
-   			new Empleado("Wako", 50, "Guaco", false)
+   			new Empleado("Marco", 21, "Programador", false, "red"),
+   			new Empleado("José Luis", 50, "Chaca", true, "orange"),
+   			new Empleado("Daves", 21, "Cyborg", true, "yellow"),
+   			new Empleado("Wako", 50, "Guaco", false, "grey")
    		];
    }
    ngOnInit(){
@@ -55,6 +59,16 @@ export class EmpleadoComponent { //Clase Fruta
    			//}
    			//console.log(numero);
    		//}
+
+       cambiarBono(variableBono){
+           this.empleado.bono = variableBono;
+           this.trabajadores[0].bono = variableBono;
+       }
+
+       //TWDB
+       getColorSeleccionado(){
+         console.log(this.colorSeleccionado)
+       }
 
 
     }

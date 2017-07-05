@@ -11,6 +11,7 @@ export class Empleado{
 		public nombre:string,
 		public edad:number,
 		public puesto:string,
-		public bono: boolean
+		public bono: boolean,
+		public colorFav: string
 		){}
 }

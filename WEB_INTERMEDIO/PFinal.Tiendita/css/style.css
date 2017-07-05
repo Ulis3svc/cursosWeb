@@ -1,0 +1,164 @@
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  nav{
+    padding-right: 50px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+  }
+  #texto{
+    font-family: 'Nova Round', cursive;
+  }
+  h4{
+    font-family: 'PT Sans', sans-serif;
+  }
+  main {
+    flex: 1 0 auto;
+  }
+  p{
+  	text-align: justify;
+  }
+  .parallax-container {
+      height: 500px;
+    }
+  .carousel .carousel-item{
+  	width: 400px;
+  }
+	img.got1, img.got3{
+		width: 50%;
+		
+	}
+.redes{
+    padding-left: 30px;
+}
+.logo {
+    height: 65px;
+    width: 45%;
+}
+.logo-foot-apple{
+    height: 64px;
+    width: 30%;
+    padding-left: 2px;
+}
+.logo-foot-play{
+    padding-right: 10px;
+    height: 60px;
+    width: 30%;
+}
+.prov{
+  padding-bottom: 50px;
+}
+#load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200; /*Para superponer*/
+  top: 300px;
+  left: 630px;
+  right: 0;
+  bottom:0px;  
+}
+/*Animaciones*/
+#imagR{
+  position: relative;
+    -webkit-animation: mymove 5s infinite paused; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite paused;
+}
+#imagL{
+  position: relative;
+    -webkit-animation: mymoveL 5s infinite paused; /* Safari 4.0 - 8.0 */
+    animation: mymoveL 5s infinite paused;
+}
+#imagD{
+  position: relative;
+    -webkit-animation: mymoveD 5s infinite paused; /* Safari 4.0 - 8.0 */
+    animation: mymoveD 5s infinite paused;
+}
+#ciclo1{
+  position: relative;
+    -webkit-animation: animaCicloA 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: animaCicloA 10s infinite;
+    animation-delay: 5s;
+}
+#ciclo2{
+  position: relative;
+    -webkit-animation: animaCicloB 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: animaCicloB 10s infinite;
+    animation-delay: 5s;
+}
+#ciclo3{
+  position: relative;
+    -webkit-animation: animaCicloC 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: animaCicloC 10s infinite;
+    animation-delay: 5s;
+}
+
+#imagR:hover {
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation-play-state: running;
+}
+#imagL:hover {
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation-play-state: running;
+}
+#imagD:hover {
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation-play-state: running;
+}
+#ciclo1:hover{
+    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+}
+#ciclo2:hover {
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+}
+#ciclo3:hover {
+    -webkit-animation-play-state: running; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+}
+
+
+@keyframes mymove {
+    0% {left: 0px;}
+    33% {left: 160px;}
+    99% {left: 0px;}
+}
+@keyframes mymoveL {
+    0% {left: 0px;}
+    33% {left: -160px;}
+    99% {left: 0px;}
+}
+@keyframes mymoveD {
+    0% {top: 0px;}
+    33% {top: 160px;}
+    99% {top: 0px;}
+}
+@keyframes animaCicloA {
+    0% {left: 0px; top: 0px;}
+    20% {left: 300px; top: 0px;}
+    40% {left: 600px; top: 0px;}
+    60% {left: 600px; top: 300px;}
+    80% {left: -10px; top: 300px;}
+    100% {left: -10px; top: 0px;}
+}
+@keyframes animaCicloB {
+    0% {left: 0px; top: 0px;}
+    20% {left: 280px; top: 0px;}
+    40% {left: 280px; top: 300px;}
+    60% {left: -220px; top: 300px;}
+    80% {left: -220px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes animaCicloC {
+    0% {left: 0px; top: 0px;}
+    20% {left: 0px; top: 300px;}
+    40% {left: -520px; top: 300px;}
+    60% {left: -520px; top: 0px;}
+    80% {left: -260px; top: 0px;}
+    100% {left: 0px; top: 0px;}
+}
+#ciclo1, #ciclo3 {animation-timing-function: ease-out;}
+#ciclo2 {animation-timing-function: linear;}

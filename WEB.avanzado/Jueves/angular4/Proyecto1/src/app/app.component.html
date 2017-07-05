@@ -1,7 +1,16 @@
 <!-- En este archivo se embeben todas las etiquetas y componentes nuevos que hagamos-->
 <!--<h1>Yo soy el componente principal</h1>-->
 <hr>
-<h1>Yo soy el componente numero 0</h1>
+<h1></h1>
 <hr>
 
-<app-empleado></app-empleado>
+<!--<app-empleado></app-empleado>-->
+<!--<app-home></app-home>-->
+<nav>
+	<a routerLink="/home" routerLinkActive="activo">Home</a>
+	<a [routerLink]="['/fruta']" [routerLinkActive]="['activo']">Fruta</a>
+	<a [routerLink]="['/verdura']" [routerLinkActive]="['activo']">Verdura</a>
+	<a [routerLink]="['/empleado']" [routerLinkActive]="['activo']">Empleado</a>
+</nav>
+<router-outlet> 
+</router-outlet>

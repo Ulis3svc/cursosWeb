@@ -1,41 +1,40 @@
 <!--En la vista se llama al componente-->
-<h1>Hola a Todos. Yo Soy el {{nombreDelComponente}}</h1>
-<hr>
-<ul>
+<!--<hr>-->
+<!--<ul>-->
 	<!--<li>{{empleado.nombre}}</li>-->
 	<!--<li>{{empleado.edad}}</li>-->
-	<li>{{trabajadores[0].nombre}}</li>
+<!--	<li>{{trabajadores[0].nombre}}</li>
 	<li>{{trabajadores[0].edad}}</li>
 	<li>{{trabajadores[0].puesto}}</li>
 	<li>{{trabajadores[0].bono}}</li>
 </ul>
 
-<ul>
+<ul>-->
 	<!--<li>{{empleado.nombre}}</li>-->
 	<!--<li>{{empleado.edad}}</li>-->
-	<li>{{trabajadores[1].nombre}}</li>
+	<!--<li>{{trabajadores[1].nombre}}</li>
 	<li>{{trabajadores[1].edad}}</li>
 	<li>{{trabajadores[1].puesto}}</li>
 	<li>{{trabajadores[1].bono}}</li>
 </ul>
 
-<ul>
+<ul>-->
 	<!--<li>{{empleado.nombre}}</li>-->
 	<!--<li>{{empleado.edad}}</li>-->
-	<li>{{trabajadores[2].nombre}}</li>
+	<!--<li>{{trabajadores[2].nombre}}</li>
 	<li>{{trabajadores[2].edad}}</li>
 	<li>{{trabajadores[2].puesto}}</li>
 	<li>{{trabajadores[2].bono}}</li>
 </ul>
 
-<ul>
+<ul>-->
 	<!--<li>{{empleado.nombre}}</li>-->
 	<!--<li>{{empleado.edad}}</li>-->
-	<li>{{trabajadores[3].nombre}}</li>
+	<!--<li>{{trabajadores[3].nombre}}</li>
 	<li>{{trabajadores[3].edad}}</li>
 	<li>{{trabajadores[3].puesto}}</li>
 	<li>{{trabajadores[3].bono}}</li>
-</ul>
+</ul>-->
 
 
 <!--<ul>
@@ -49,3 +48,59 @@
 	<li>{{cosasFavoritas[1]}}</li>
 	<li>{{cosasFavoritas[2]}}</li>
 </ul>-->
+<!--<div *ngIf="empleado.bono == true">
+<button (click)="cambiarBono(false)">Cambiar bono</button>
+	<ul>
+		<li>{{empleado.nombre}}</li>
+		<li>{{empleado.edad}}</li>
+		<li>{{empleado.puesto}}</li>
+	</ul>
+</div>
+<div *ngIf="trabajadores[0].bono == false">
+	<button (click)="cambiarBono(true)">Cambiar bono</button>
+	<ul>
+		<li>{{trabajadores[0].nombre}}</li>
+		<li>{{trabajadores[0].edad}}</li>
+		<li>{{trabajadores[0].puesto}}</li>
+	</ul>
+</div> -->
+
+<!--<div *ngIf="bandera;else miElse">
+	<h1>Soy el If</h1>
+	
+</div> 
+
+<ng-template #miElse>
+	<h1>Soy el else</h1>
+</ng-template>
+
+<div>
+	<ul>
+		<li *ngFor ="let trabajador of trabajadores; let i = index">
+			<ul [ngSwitch] = trabajador.colorFav>
+				<li>{{i+1}}</li>
+				<li>{{trabajador.nombre}}</li>
+				<li>{{trabajador.edad}}</li>
+				<li>{{trabajador.puesto}}</li>
+				<li>{{trabajador.bono}}</li>
+				<li *ngIf="trabajador.bono == true">Con Bono!</li>
+				<li *ngIf="trabajador.bono == false">Sin Bono!</li>
+				<li *ngSwitchCase = "'red'" [ngStyle] = "{'background': trabajador.colorFav, 'color':'white'}">Mi color favorito es el rojillo!</li>
+				<li *ngSwitchCase = "'orange'" [ngStyle] = "{'background': trabajador.colorFav,'color':'white'}">Mi color favorito es el naranja!</li>
+				<li *ngSwitchCase = "'yellow'" [ngStyle] = "{'background': trabajador.colorFav,'color':'black'}">Mi color favorito es el amarillo!</li>
+				<li *ngSwitchCase = "'grey'" [ngStyle] = "{'background': trabajador.colorFav, 'color':'white'}">Mi color favorito es el gris!</li>
+			</ul>
+		</li>
+	</ul>
+</div> -->
+
+<h3>Selector de Colores</h3>
+<input type="text" [(ngModel)] = "colorSeleccionado">
+<button (click) = "getColorSeleccionado()">Imprime Color</button>
+<!--p [style.border]="colorSeleccionado == 'red' ? '5px solid black' : '0px solid black'" style="font-size: 30px"> -->
+<p [ngClass] = "{fondoAzul: colorSeleccionado == 'blue'}">{{colorSeleccionado}}</p>
+<div [ngStyle]="{
+	'background': colorSeleccionado,
+	'width': '200px',
+	'height': '200px'
+}"></div>
