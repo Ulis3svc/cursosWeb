@@ -9,7 +9,7 @@ canvas{
 	margin: 50px auto 10px;
 	border-radius: 5px;
 	box-shadow: 0 4px 0 0 0 #222;
-	cursor: url(../img/pencil.png), crosshair;
+	cursor: url(../img/pencil2.png), crosshair;
 }
 
 .controls{
@@ -74,9 +74,16 @@ button{
 #borrar{
 	position: absolute;
 	top: 50%;
-	left: 20%;
+	left: 10%;
+	width: auto;
 }
-#revelarColor{
+#pencil{
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	width: auto;
+}
+#revelarColor, #borrar, #pencil{
 	border: none;
 	border-radius: 5px;
 	margin: 10px auto;
